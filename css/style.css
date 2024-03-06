@@ -337,15 +337,17 @@ header img {
 /* FOOTER */
 footer {
   width: 100%;
-  height: 150px;
+  /* height: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: center; */
 }
-
-footer .links a {
+.footerLink {
+  text-decoration: none;
+}
+/* footer .links a {
   text-decoration: none;
 }
 footer .links a i {
@@ -356,7 +358,7 @@ footer .links a i {
 footer .links a i:hover {
   transform: translateY(-0.13em);
   color: #F45B69;
-}
+} */
 
 
 /* MOBILE */
