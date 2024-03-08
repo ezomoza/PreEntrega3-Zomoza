@@ -350,6 +350,10 @@ header img {
 
 /* TABLET */
 @media (max-width: 1120px) {
+  .sobremiContainer {
+    flex-direction: column;
+    text-align: center;
+  }
   #home {
     display: flex;
     text-align: center;
@@ -403,11 +407,5 @@ header img {
   }
   .hero {
     margin-top: 100px;
-  }
-
-  /* sobre mi */
-  .sobremiContainer {
-    flex-direction: column;
-    text-align: center;
   }
 }
