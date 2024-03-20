@@ -1,0 +1,38 @@
+
+.header__nav {
+  background-color: $primary-color;
+}
+
+.header__logo h4 {
+  padding-left: 30px;
+  color: #fff;
+  font-family: $playfair-display;
+  text-transform: uppercase;
+}
+.header__menu,
+.header__menu-mobile {
+  padding: 20px;
+  flex: 1.2379;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 64px;
+  list-style: none;
+}
+
+.header__menu li {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: $plus-jakarta-sans;
+  color: $secondary-color;
+  cursor: pointer;
+}
+
+.header__menu li img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
