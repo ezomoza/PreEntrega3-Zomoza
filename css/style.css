@@ -4,6 +4,7 @@
 /* CSS variables for reusablity across all files (including above imported) */
 .header__nav {
   background-color: #b1454a;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
 }
 
 .header__logo h4 {
@@ -32,6 +33,14 @@
   font-family: "Plus Jakarta Sans", sans-serif;
   color: #121212;
   cursor: pointer;
+}
+
+.header__menu li a {
+  color: #fff;
+}
+
+.header__menu {
+  gap: 40px;
 }
 
 .header__menu li img {
@@ -64,7 +73,7 @@
   position: absolute;
   inset: 0;
   width: 100%;
-  /* background-color: $primary-color */
+  background-color: #b1454a;
   z-index: -1;
 }
 
@@ -188,8 +197,8 @@
 }
 
 .hero-content__review img {
-  width: 42px;
-  height: 42px;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
 }
 
@@ -204,7 +213,7 @@
 
 .about-us {
   display: flex;
-  min-height: 720px;
+  height: 80vh;
   overflow: hidden;
 }
 
@@ -474,7 +483,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 100;
   width: 130px;
   height: 140px;
   background-color: #121212;
@@ -482,10 +491,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 
 .trending__discover p {
-  color: #fff;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 500;
@@ -517,7 +526,6 @@
 .trending__list li {
   flex: 1;
   display: flex;
-  align-items: center;
   flex-direction: row;
   gap: 12px;
   min-width: 210px;
@@ -611,6 +619,7 @@
 }
 
 .subscription {
+  height: 80vh;
   padding: 64px;
   background-color: #b1454a;
   background-image: url(../assets/subscribe_bg.png);
@@ -695,13 +704,15 @@
   font-weight: bold;
   font-family: var(-playfair-display);
   text-transform: uppercase;
+  margin-bottom: 0;
   color: #121212;
   cursor: pointer;
 }
 
-/* .footer__logo span {
-  color: $primary-color);
-} */
+.footer__logo span {
+  color: #b1454a;
+}
+
 .footer ul {
   list-style: none;
   display: flex;
@@ -714,13 +725,14 @@
   gap: 32px;
 }
 
-.footer__nav li {
-  font-size: 16px;
-  font-weight: 500;
+.copy {
   font-family: "Plus Jakarta Sans", sans-serif;
-  text-transform: uppercase;
-  color: #121212;
-  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.footer__social {
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .footer__social li {
@@ -826,6 +838,18 @@ a {
   align-items: center;
 }
 
+.btn {
+  color: #fff;
+  background: #121212;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.9);
+}
+
+.btn:hover {
+  color: #000;
+  background: #fff;
+}
+
 .flex-between {
   display: flex;
   justify-content: space-between;
@@ -875,6 +899,7 @@ a {
 @media screen and (max-width: 1024px) {
   .about-us {
     flex-direction: column;
+    height: 100%;
   }
   .about-us__image {
     flex-direction: row;
@@ -986,6 +1011,7 @@ a {
 @media screen and (max-width: 550px) {
   .subscription {
     padding: 64px 32px;
+    height: 100%;
   }
   .subscription h2 {
     font-size: 68px;
@@ -1015,7 +1041,7 @@ a {
   .trending-sushi {
     flex-direction: column;
   }
-  .trending-drink {
+  .trending-drinks {
     flex-direction: column-reverse;
   }
   .trending__image {
@@ -1030,9 +1056,13 @@ a {
   }
 }
 @media screen and (max-width: 550px) {
+  .trending-sushi,
+  .trending-drinks {
+    min-width: 0;
+  }
   .trending__image img {
-    width: 70%;
-    height: 70%;
+    width: 50%;
+    height: 50%;
   }
   .trending__content {
     padding: 32px;

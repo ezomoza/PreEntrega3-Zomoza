@@ -12,12 +12,13 @@
   font-weight: bold;
   font-family: var(-playfair-display);
   text-transform: uppercase;
+  margin-bottom: 0;
   color: $secondary-color;
   cursor: pointer;
 }
-/* .footer__logo span {
-  color: $primary-color);
-} */
+ .footer__logo span {
+  color: $primary-color;
+} 
 .footer ul {
   list-style: none;
   display: flex;
@@ -28,14 +29,23 @@
 .footer ul:last-child {
   gap: 32px;
 }
-.footer__nav li {
-  font-size: 16px;
-  font-weight: 500;
+.copy {
   font-family: $plus-jakarta-sans;
-  text-transform: uppercase;
-  color: $secondary-color;
-  cursor: pointer;
+  margin-bottom: 0;
 }
+.footer__social {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+// .footer__nav li {
+//   font-size: 16px;
+//   font-weight: 500;
+//   font-family: $plus-jakarta-sans;
+//   text-transform: uppercase;
+//   color: $secondary-color;
+//   cursor: pointer;
+// }
 .footer__social li {
   width: 42px;
   height: 42px;
