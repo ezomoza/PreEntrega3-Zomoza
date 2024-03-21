@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
 .header__nav {
-  height: 10vh;
+  z-index: 100;
   background-color: #b1454a;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
 }
@@ -691,7 +691,7 @@
 
 .footer {
   width: 100%;
-  height: 10vh;
+  height: 9vh;
   padding: 20px 40px;
   background: #fff;
   flex-wrap: wrap;
@@ -742,7 +742,7 @@
   border-radius: 100%;
 }
 
-.footer__social li img {
+.footer__social li a {
   width: 45%;
   height: 45%;
   object-fit: contain;
@@ -960,6 +960,7 @@ a {
 @media screen and (max-width: 1060px) {
   .hero {
     flex-direction: column;
+    height: 100%;
   }
   .hero-image img {
     width: 100%;
@@ -1066,10 +1067,8 @@ a {
 /* COMIENZO footer media queries */
 @media screen and (max-width: 550px) {
   .footer {
-    flex-direction: column;
-  }
-  .footer ul {
-    gap: 20px;
+    justify-content: center;
+    height: 100%;
   }
 }
 

@@ -188,6 +188,7 @@ a {
 @media screen and (max-width: 1060px) {
   .hero {
     flex-direction: column;
+    height: 100%;
   }
   .hero-image img {
     width: 100%;
@@ -303,9 +304,8 @@ a {
 /* COMIENZO footer media queries */
 @media screen and (max-width: 550px) {
   .footer {
-    flex-direction: column;
+    justify-content: center;
+    height: 100%;
   }
-  .footer ul {
-    gap: 20px;
-  }
+  
 }
