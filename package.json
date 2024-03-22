@@ -1,0 +1,22 @@
+{
+  "name": "preentrega3",
+  "version": "1.0.0",
+  "description": "proyecto con html, css y sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezomoza/PreEntrega3-Zomoza.git"
+  },
+  "keywords": [
+    "SASS"
+  ],
+  "author": "Emanuel Jose Zomoza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ezomoza/PreEntrega3-Zomoza/issues"
+  },
+  "homepage": "https://github.com/ezomoza/PreEntrega3-Zomoza#readme"
+}

@@ -106,7 +106,7 @@
   flex: 1;
   gap: 10px;
 }
-.hero-content__customer h4 {
+.hero-content__customer h2 {
   font-size: 62px;
   font-weight: 400;
   font-family: $playfair-display;
@@ -116,7 +116,6 @@
   font-weight: 400;
   font-family: $plus-jakarta-sans;
   color: $secondary-color;
-  opacity: 0.5;
 }
 .hero-content__review {
   flex: 1;
