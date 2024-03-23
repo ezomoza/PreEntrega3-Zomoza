@@ -13,6 +13,7 @@
 
 * Partials
 * Variables
+* Anidaciones
 
 ## ANIMACIONES
 
