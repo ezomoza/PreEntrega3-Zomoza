@@ -8,23 +8,24 @@
   background-size: contain;
   flex-direction: column;
   overflow: hidden;
+  h2 {
+    font-size: 88px;
+    font-family: $playfair-display;
+    font-weight: 600;
+    line-height: 123px;
+    color: #fff;
+    text-align: center;
+  }
+  p {
+    font-size: 18px;
+    font-family: $plus-jakarta-sans;
+    font-weight: 300;
+    line-height: 36px;
+    margin-top: 32px;
+    color: rgba(255,255,255,0.8);
+  }
 }
-.subscription h2 {
-  font-size: 88px;
-  font-family: $playfair-display;
-  font-weight: 600;
-  line-height: 123px;
-  color: #fff;
-  text-align: center;
-}
-.subscription p {
-  font-size: 18px;
-  font-family: $plus-jakarta-sans;
-  font-weight: 300;
-  line-height: 36px;
-  margin-top: 32px;
-  color: rgba(255,255,255,0.8);
-}
+
 .subscription__form {
   min-width: 480px;
   margin-top: 40px;
@@ -33,33 +34,34 @@
   gap: 10px;
   border: 1px solid rgba(255,255,255,0.5);
   border-radius: 46px;
+  input {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: $plus-jakarta-sans;
+    color: #fff;
+    opacity: 0.5;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  input::placeholder {
+    color: #fff;
+    opacity: 0.5;
+  }
+  button {
+    padding: 20px;
+    min-width: 180px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: $plus-jakarta-sans;
+    color: #fff;
+    text-align: center;
+    background: $black-400;
+    border-radius: 46px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
 }
-.subscription__form input {
-  flex: 1;
-  font-size: 16px;
-  font-weight: 400;
-  font-family: $plus-jakarta-sans;
-  color: #fff;
-  opacity: 0.5;
-  background: transparent;
-  border: none;
-  outline: none;
-}
-.subscription__form input::placeholder {
-  color: #fff;
-  opacity: 0.5;
-}
-.subscription__form button {
-  padding: 20px;
-  min-width: 180px;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: $plus-jakarta-sans;
-  color: #fff;
-  text-align: center;
-  background: $black-400;
-  border-radius: 46px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
+

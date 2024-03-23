@@ -18,22 +18,22 @@
   align-items: center;
   gap: 40px;
   list-style: none;
-}
-.header__menu li {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  font-family: $plus-jakarta-sans;
-  color: $secondary-color;
-  cursor: pointer;
-}
-.header__menu li a {
-  color: $color-white;
-}
-.header__menu li img {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
+  li {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-family: $plus-jakarta-sans;
+    color: $secondary-color;
+    cursor: pointer;
+    a {
+      color: $color-white;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+    }
+  }
 }
 

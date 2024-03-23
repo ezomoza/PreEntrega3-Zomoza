@@ -12,8 +12,6 @@
 @import "subscribe";
 @import "footer";
 
-
-
 // ANIMACIONES
 .fade-down {animation: fadeInDown 1.5s;}
 .fade-up {animation: fadeInUp 1.5s;}
@@ -46,7 +44,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 body {
   max-width: 1280px;
@@ -55,7 +52,6 @@ body {
 }
 a {
   text-decoration: none;
-  color: inherit;
 }
 
 // UTILIDADES
@@ -105,18 +101,6 @@ a {
   margin: 32px 0px;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.sushi__hide-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.sushi__hide-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-
 /* COMIENZO nosotros media queries */
 @media screen and (max-width: 1024px) {
   .about-us {
@@ -134,7 +118,6 @@ a {
     display: none;
   }
 }
-
 @media screen and (max-width: 750px) {
   .about-us__image {
     flex-direction: column;
@@ -148,7 +131,6 @@ a {
     top: 47%;
   }
 }
-
 @media screen and (max-width: 550px) {
   .about-us__image-sushi2 img,
   .about-us__image-sushi3 img {
@@ -167,7 +149,6 @@ a {
   }
 }
 
-
 /* COMIENZO header media querie */
 @media screen and (max-width: 900px) {
   .header__nav {
@@ -177,7 +158,6 @@ a {
     display: flex;
   }
 }
-
 @media screen and (max-width: 550px) {
   .header__logo {
     padding-left: 0;
@@ -192,18 +172,18 @@ a {
   }
   .hero-image img {
     width: 100%;
-    transform: matrix(1, 0.05, 0, 1.25, 0, 0) !important;
   }
 }
-
 @media screen and (max-width: 750px) {
   .hero-image h2 {
     font-size: 70px;
     line-height: 90px;
   }
 }
-
 @media screen and (max-width: 550px) {
+  .hero-image img {
+    transform: matrix(1, 0.05, 0, 1.25, 0, 0) !important;
+  }
   .hero-image h2 {
     font-size: 40px;
     line-height: 60px;
@@ -254,14 +234,12 @@ a {
     padding: 0;
     border: none;
   }
-
   .subscription__form input {
     min-height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     padding: 10px 20px;
     border-radius: 30px;
   }
-
   .subscription__form button {
     min-width: 100%;
   }
@@ -308,5 +286,4 @@ a {
     height: 100%;
     text-align: center;
   }
-  
 }
